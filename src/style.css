@@ -2,3 +2,25 @@
 }
 
 @import "tailwindcss";
+
+* {
+  scrollbar-width: thin; /* ince scrollbar */
+  scrollbar-color: #9333ea #f3e8ff; /* thumb rengi, track rengi */
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 12px; /* scrollbar genişliği */
+}
+
+*::-webkit-scrollbar-track {
+  background: #f3e8ff; /* track (arka plan) rengi */
+  border-radius: 8px;   /* track köşe yuvarlama */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #9333ea; /* thumb (kaydırma çubuğu) rengi */
+  border-radius: 8px;        /* thumb köşe yuvarlama */
+  border: 2px solid #f3e8ff; /* track ile thumb arasında boşluk efekti */
+}
+
